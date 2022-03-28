@@ -95,6 +95,8 @@ GEM
       responders
       warden (~> 1.2.3)
     digest (3.1.0)
+    doorkeeper (5.5.4)
+      railties (>= 5)
     erubi (1.10.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -119,6 +121,7 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.0)
     minitest (5.15.0)
     msgpack (1.4.5)
     net-imap (0.2.3)
@@ -137,6 +140,9 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
+    nokogiri (1.13.3)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     nokogiri (1.13.3-x86_64-darwin)
       racc (~> 1.4)
     orm_adapter (0.5.0)
@@ -195,14 +201,9 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
-    stimulus-rails (1.0.4)
-      railties (>= 6.0.0)
     strscan (3.0.1)
     thor (1.2.1)
     timeout (0.2.0)
-    turbo-rails (1.0.1)
-      actionpack (>= 6.0.0)
-      railties (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     warden (1.2.9)
@@ -224,6 +225,7 @@ GEM
     zeitwerk (2.5.4)
 
 PLATFORMS
+  ruby
   x86_64-darwin-21
 
 DEPENDENCIES
@@ -231,6 +233,7 @@ DEPENDENCIES
   capybara
   debug
   devise
+  doorkeeper
   importmap-rails
   jbuilder
   puma (~> 5.0)
@@ -239,8 +242,6 @@ DEPENDENCIES
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
-  stimulus-rails
-  turbo-rails
   tzinfo-data
   web-console
   webdrivers
